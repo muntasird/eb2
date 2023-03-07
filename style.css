@@ -1,3 +1,6 @@
+body{
+overflow: hidden;
+}
 *{
     padding: 0;
     margin: 0;
@@ -92,6 +95,23 @@ a{
 /* *COMMON CSS ENDS  * */
 
 /* *HEADER STARTS HERE* */
+header .log-in ul li:last-child{
+    border-right:none ;
+}
+header .log-in ul li a i{
+    margin-right: 4px;
+}
+header .log-in ul li a{
+    margin: 0 20px;
+    color: var(--thirdcolor);
+}
+header .log-in ul li{
+    border-right:1px solid #dddddd;
+    
+}
+header .log-in ul{
+    display: flex;
+}
 
 header{
     background-color: var(--primarycolor);
@@ -100,12 +120,11 @@ header{
 header .currency ul li select{
     background: transparent;
     border: none;
+    outline: none;
     color: var(--thirdcolor);
-    
-
 }
-header .currency
-header .log-in{
+header .currency,
+ header .log-in{
     width: 50%;
 }
 header .currency ul li:last-child{
@@ -184,7 +203,7 @@ nav .menu ul li:hover a::before {
     width: 50%;
 }
 nav .logo{
-    padding-top: 39px;
+    padding-top: 8 px;
     padding-left: 50px;
 }
 nav .menu ul li a {
@@ -196,7 +215,7 @@ nav .menu ul li a {
     display: block;
   }
     
-  nav .menu ul li a::before {
+nav .menu ul li a::before {
     content: "";
     width: 0%;
     height: 2px;
@@ -205,13 +224,28 @@ nav .menu ul li a {
     bottom: -8px;
     left: 0;
     transition: 0.3s;
-    }
+}
   nav .menu ul li:hover a::before {
     width: 25%;
-  }
+}
   nav ul li:hover a{
     color: var(--secondorycolor);
-  }
+}
+nav .icon ul li:hover a{
+    color: var(--secondorycolor);
+}
+nav .icon ul li a i{
+    margin: 0 2px;
+}
+nav .icon ul li a{
+    color: var(--textcolor);
+}
+nav .icon ul li{
+    margin: 0 15px;
+}
+nav .icon ul{
+    display: flex;
+}
     
 /* *NAVIGATION BAR STARTS HERE* */
  
@@ -638,7 +672,38 @@ nav .menu ul li a {
 
 /* *RATING SECTON 2 */
 
-/* TESTIMONIAL STARTS HERE */
+/* *TESTIMONIAL STARTS HERE* */
+.hd{
+    text-align: center;
+    justify-content: center;
+    margin: 100px 0;
+}
+.hd a{
+    display:inline-block;
+    font-size: 40px;
+    font-family: var(--primaryfonts);
+    font-weight: 500;
+    position: relative;
+    color: var(--textcolor);    
+}
+.hd a::after{
+    content: '';
+    position: absolute;
+    background-color: var(--secondorycolor);
+    width: 50%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+}
+.hd a::before{
+    content: '';
+    position: absolute;
+    background-color: var(--secondorycolor);
+    width: 25%;
+    height: 2px;
+    bottom: -8px;
+    left: 0;
+}
 #test {
     background-image: url(./tetimonial.png);
     background-repeat: no-repeat;
